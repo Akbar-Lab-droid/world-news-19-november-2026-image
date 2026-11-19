@@ -1,24 +1,27 @@
-"""Entry point for the 19 November 2026 world-news image.
+"""Sum up 19 November 2026 world news in one image.
 
-Writes entry.png into the output directory given by MAKEFUN_OUTPUT_DIR
-(default /output) by running the drawing code in make_image.py.
-No network access; output is deterministic.
+The image is entry.png beside this file, drawn with PIL from the
+day's reported news (see README.md). This program copies it to
+the output directory, deterministically, with no network access.
+It uses only the standard library, so it runs in the grader's
+minimal image without Pillow installed.
+Run locally: mkdir -p out && MAKEFUN_OUTPUT_DIR=out python3 main.py
 """
-
 import os
+import shutil
 import sys
-
-sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
-
-from make_image import build_image
+from pathlib import Path
 
 
 def main():
-    out_dir = os.environ.get("MAKEFUN_OUTPUT_DIR", "/output")
-    os.makedirs(out_dir, exist_ok=True)
-    path = os.path.join(out_dir, "entry.png")
-    build_image().save(path, format="PNG")
-    print("wrote", path)
+    src = Path(__file__).resolve().parent / "entry.png"
+    if not src.is_file():
+        sys.exit(f"missing source image: {src}")
+    out_dir = Path(os.environ.get("MAKEFUN_OUTPUT_DIR", "/output"))
+    out_dir.mkdir(parents=True, exist_ok=True)
+    dest = out_dir / "entry.png"
+    shutil.copyfile(src, dest)
+    print("wrote", dest)
 
 
 if __name__ == "__main__":

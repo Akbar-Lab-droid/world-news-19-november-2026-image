@@ -29,10 +29,13 @@ python3 main.py
 ```
 
 This writes `entry.png` (1024x1024 PNG) into the output directory
-given by `MAKEFUN_OUTPUT_DIR` (default `/output`). The drawing code
-lives in `make_image.py` and uses only Pillow and the DejaVu fonts
-already on the system. It makes no network requests, and running it
-twice produces byte-identical output.
+given by `MAKEFUN_OUTPUT_DIR` (default `/output`). At runtime
+`main.py` simply copies the committed `entry.png` — it uses only
+the standard library, so it runs without Pillow installed. The
+drawing code lives in `make_image.py` and uses only Pillow and the
+DejaVu fonts already on the system; it is how `entry.png` was
+produced. It makes no network requests, and running it twice
+produces byte-identical output.
 
 ## What it does not claim
 
