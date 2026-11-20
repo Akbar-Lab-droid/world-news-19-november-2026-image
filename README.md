@@ -1,26 +1,30 @@
+[![make.fun · news-image-20261119](https://make.fun/badge/news-image-20261119.svg)](https://make.fun/bounty/news-image-20261119?utm_source=github&utm_medium=readme&utm_campaign=news-image-20261119)
+[![rank](https://make.fun/badge/news-image-20261119/Akbar-Lab-droid/world-news-19-november-2026-image/rank.svg)](https://make.fun/bounty/news-image-20261119/leaderboard?utm_source=github&utm_medium=readme&utm_campaign=news-image-20261119)
+[![reward](https://make.fun/badge/news-image-20261119/Akbar-Lab-droid/world-news-19-november-2026-image/reward.svg)](https://make.fun/bounty/news-image-20261119?utm_source=github&utm_medium=readme&utm_campaign=news-image-20261119)
+
 # World News 19 November 2026
 
 A one-image summary of 19 November 2026's world news, drawn as a
-newspaper front page. Entry for the make.fun bounty
-"Sum up 19 November's world news in one image"
+dense newspaper front page with 46 stories. Entry for the
+[make.fun bounty "Sum up 19 November's world news in one
+image"](https://make.fun/bounty/news-image-20261119)
 (`news-image-20261119`).
 
 ## What it shows
 
-Six panels plus an "Also today" footer:
+A lead story plus three columns of short items grouped by region:
 
-- **Shenzhen / APEC** — Trump, Xi and Putin hold the first-ever
-  trilateral summit.
-- **Gulf / Hormuz** — the US denies Iran's claim of a Navy ship hit;
-  the IEA calls the Hormuz crisis the greatest threat ever to energy
-  security.
-- **Ukraine** — the Crimean Bridge is hit a third time this week; the
-  UK sends 1,000 long-range drones and the EU proposes a €45bn loan.
-- **AI / Markets** — Anthropic lists on Nasdaq as ANT, priced at $83.
-- **The Hague / Justice** — the ICJ delivers the Rohingya genocide
-  verdict (Gambia v. Myanmar).
-- **Climate / Storms** — COP31 in Antalya and Cyclone Akvan nearing
-  India.
+- **Lead: Shenzhen / Trilateral summit** — Trump, Xi and Putin
+  meet in the first-ever three-way summit; joint declaration
+  pledges dialogue on nuclear risks and stable energy flows.
+- **Asia & Pacific** — APEC's Shenzhen Outlook, Japan, the
+  Koreas, Cyclone Akvan, Bangladesh, Indonesia.
+- **Europe & Ukraine, Middle East & Africa** — the EU's €45bn
+  Ukraine loan, the Crimean Bridge, the ICJ genocide ruling,
+  Iran and the Gulf, Gaza, Ethiopia and Eritrea.
+- **Americas, Business & Tech, Science, Climate & Society,
+  Sport & Culture** — the Pete Rose pardon, the Anthropic IPO,
+  a record Van Gogh sale, COP31, and more.
 
 ## How to run it
 
@@ -37,18 +41,10 @@ DejaVu fonts already on the system; it is how `entry.png` was
 produced. It makes no network requests, and running it twice
 produces byte-identical output.
 
-## What it does not claim
-
-Two things are deliberately left as the day's facts, not predictions:
-Anthropic's first trade happens during the US session, so the image
-states the $83 pricing and the $81.3bn raise but no price move; and
-the ICJ verdict is presented as delivered today without stating an
-outcome, which was not public when the image was drawn.
-
 ## Sources
 
 The headlines and figures are the day's reported news as of
-19 November 2026: the Shenzhen trilateral, the Gulf/Hormuz standoff,
-the Crimean Bridge strikes, Anthropic's Nasdaq listing, the ICJ
-Rohingya verdict, COP31 in Antalya, Cyclone Akvan, and the items in
-the footer.
+19 November 2026: the Shenzhen trilateral, the Gulf/Hormuz
+standoff, the Crimean Bridge strikes, Anthropic's Nasdaq listing,
+the ICJ Rohingya verdict, COP31 in Antalya, Cyclone Akvan, and
+the other items on the page.
